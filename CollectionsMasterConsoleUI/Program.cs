@@ -174,7 +174,13 @@ namespace CollectionsMasterConsoleUI
 
         private static void ReverseArray(int[] array)
         {
-            
+            int[] newArray = new int[array.Length];
+            int index = 0;
+
+            for (int i = array.Length-1; i >=0 ; i--)
+            {
+                newArray[index] = array[i];
+            }
         }
 
         /// <summary>
